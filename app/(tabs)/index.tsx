@@ -70,6 +70,9 @@ export default function Index() {
       return () => {
         habitsSubscription();
         completionsSubscription();
+        // 清除所有Swipeable引用
+      Object.values(swipeableRefs.current).forEach(ref => ref?.close());
+      swipeableRefs.current = {};
       };
     }
   }, [user]);

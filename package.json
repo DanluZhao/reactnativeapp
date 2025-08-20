@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "expo start",
+    "build": "eas build --profile production",
     "reset-project": "node ./scripts/reset-project.js",
     "android": "expo run:android",
     "ios": "expo run:ios",
@@ -15,7 +16,7 @@
     "@react-navigation/bottom-tabs": "^7.3.10",
     "@react-navigation/elements": "^2.3.8",
     "@react-navigation/native": "^7.1.6",
-    "expo": "~53.0.20",
+    "expo": "^53.0.20",
     "expo-blur": "~14.1.5",
     "expo-constants": "~17.1.7",
     "expo-doctor": "^1.13.5",
